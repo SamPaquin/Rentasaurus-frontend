@@ -1,0 +1,68 @@
+@import "../../../Sass/App.scss";
+
+.main-navigation__drawer-nav img {
+  height: 4rem;
+  transform: rotate(30deg);
+}
+
+.main-navigation__title-section img {
+  height: 1.5rem;
+  transform: rotate(30deg);
+}
+
+.main-navigation__menu-btn {
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.main-navigation__menu-btn span {
+  display: block;
+  width: 2.75rem;
+  height: 0.3rem;
+  background: $white;
+}
+
+.main-navigation__title-section {
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation__title {
+  color: $white;
+  // font-family: Erasaur;
+}
+
+.main-navigation__title a {
+  text-decoration: none;
+  color: $white;
+}
+
+.main-navigation__header-nav {
+  display: none;
+}
+
+.main-navigation__drawer-nav {
+  height: 100%;
+}
+
+@media (min-width: 913px) {
+  .main-navigation__title-section img {
+    height: 1.5rem;
+    transform: rotate(30deg);
+  }
+
+  .main-navigation__menu-btn {
+    display: none;
+  }
+
+  .main-navigation__header-nav {
+    display: block;
+  }
+}

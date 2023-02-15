@@ -1,0 +1,110 @@
+@import "../../Sass/App.scss";
+
+.existing-report {
+  width: 95%;
+  max-width: 1300px;
+}
+
+.report label {
+  font-weight: bold;
+}
+
+.report .decor {
+  height: 2px;
+  margin: 0.3rem 0;
+  background-color: $green;
+}
+
+.title {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.title-image {
+  display: flex;
+  justify-self: center;
+  width: 90%;
+}
+
+.title img {
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 80%;
+  height: auto;
+}
+
+.property-info {
+  width: 90vw;
+}
+
+.property-info h2 {
+  font-size: 3rem;
+}
+
+.address {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.summary {
+  margin-top: 1rem;
+}
+
+.summary-content {
+  padding-bottom: 1rem;
+}
+
+.quick-stats {
+  margin-top: 1rem;
+}
+
+.income-and-expenses {
+  margin: 1rem 0;
+}
+
+@media (min-width: 400px) {
+  .existing-report {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .report {
+    width: 90%;
+  }
+
+  .report h4 {
+    font-size: 2rem;
+  }
+  
+  .report h5 {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    flex-direction: row;
+  }
+
+  .title-image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    max-height: 25rem;
+  }
+
+  .title-image img {
+    width: 95%;
+    object-fit: cover;
+  }
+
+  .property-info {
+    width: 50%;
+  }
+
+  .quick-stats {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}

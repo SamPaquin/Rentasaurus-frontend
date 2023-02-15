@@ -1,0 +1,41 @@
+@import "../Sass/App.scss";
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: flex;
+  padding-bottom: 3rem;
+}
+
+.home-page img {
+  height: 5rem;
+  transform: rotate(30deg);
+}
+
+.home-page__title {
+  // font-family: Erasaur;
+  font-size: 3rem;
+
+}
+
+.home-page__subtitle {
+  // font-family: Erasaur;
+  font-size: 5vw;
+}
+
+@media (min-width: 913px) {
+  .home-page img {
+    height: 8rem;
+  }  
+
+  .home-page__title {
+    font-size: 7rem;
+  }
+  
+  .home-page__subtitle {
+    font-size: 2rem;
+  }
+}

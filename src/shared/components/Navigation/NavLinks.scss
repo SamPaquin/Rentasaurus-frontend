@@ -1,0 +1,41 @@
+@import "../../../Sass/App.scss";
+
+.nav-links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 1rem;
+  font-size: 8vw;
+}
+
+.nav-links a {
+  color: $white;
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a.active {
+  cursor: pointer;
+  color: $gray;
+}
+
+@media (min-width: 913px) {
+  .nav-links img {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-links li {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+}

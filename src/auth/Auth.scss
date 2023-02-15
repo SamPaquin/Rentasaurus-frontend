@@ -1,0 +1,45 @@
+@import "../Sass/App.scss";
+
+.authentication {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 10%;
+}
+
+.authentication-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  max-height: 450px;
+  text-align: center;
+}
+
+.authentication-form h2 {
+  margin-bottom: 10px;
+}
+
+.authentication__header {
+  color: $white;
+  text-align: center;
+}
+
+.authentication form {
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+@media (min-width: 913px) {
+  .authentication {
+    margin-top: -5rem;
+  }
+
+  .authentication-form {
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}

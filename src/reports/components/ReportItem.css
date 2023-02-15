@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  background-color: #FFF;
+  height: 100vh;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-in-left-enter {
+  transform: translateX(-100%);
+}
+
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.slide-in-left-exit {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.report-item {
+  border-radius: 3px;
+  background-color: #5FCF80;
+  margin: 1rem;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.report-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.report-item__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.report-item__content:hover {
+  cursor: pointer;
+}
+
+.report-item__image {
+  width: 100%;
+  height: 12rem;
+}
+
+.report-item__image img {
+  border-radius: 3px 3px 0 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.report-item__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  width: 100%;
+}
+
+.report-item__info h2 {
+  padding-top: 0.5rem;
+}
+
+.report-item__info h3 {
+  padding-bottom: 0.5rem;
+}
+
+.report-item__actions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.report-item__modal-content {
+  padding: 0;
+}
+
+.report-item__modal-actions {
+  text-align: right;
+}
+
+.report-item__modal-actions button:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.danger {
+  color: #BE2929;
+  font-style: italic;
+}/*# sourceMappingURL=ReportItem.css.map */

@@ -1,0 +1,63 @@
+// Colors -----------------------------------------------------------------
+$green: #5FCF80;
+$pink: #CF5FAE;
+$gray: #404749;
+$lightgray: #EBEBEB;
+$offwhite: #F8F8FF;
+$white: #FFF;
+$red: #BE2929;
+$lightred: #BE292983;
+
+// Fonts ------------------------------------------------------------------
+// @font-face {
+//   font-family: "Erasaur";
+//   src: url("../fonts/Erasaur.otf");
+// }
+
+// App Styles -------------------------------------------------------------
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  background-color: $white;
+  height: 100vh;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Actions ----------------------------------------------------------------
+.slide-in-left-enter {
+  transform: translateX(-100%);
+}
+
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.slide-in-left-exit {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 200ms;
+}
+

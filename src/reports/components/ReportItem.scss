@@ -1,0 +1,81 @@
+@import "../../sass/App.scss";
+
+.report-item {
+  border-radius: 3px;
+  background-color: $green;
+  margin: 1rem;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.report-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.report-item__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.report-item__content:hover {
+  cursor: pointer;
+}
+
+.report-item__image {
+  width: 100%;
+  height: 12rem;
+}
+
+.report-item__image img {
+  border-radius: 3px 3px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.report-item__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $white;
+
+  width: 100%;
+}
+
+.report-item__info h2 {
+ padding-top: .5rem;
+}
+
+.report-item__info h3 {
+  padding-bottom: .5rem;
+}
+
+.report-item__actions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.report-item__modal-content {
+  padding: 0;
+}
+
+.report-item__modal-actions {
+  text-align: right;
+}
+
+.report-item__modal-actions button:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.danger {
+  color: $red;
+  font-style: italic;
+}

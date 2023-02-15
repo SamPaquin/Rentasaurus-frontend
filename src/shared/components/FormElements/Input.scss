@@ -1,0 +1,44 @@
+@import "../../../sass/App.scss";
+
+.form-control {
+  margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+  display: block;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+.form-control textarea {
+  height: 2rem;
+  width: 100%;
+  border: 1px solid $lightgray;
+  border-radius: 4px;
+  background: $lightgray;
+  padding: 0.15rem 0.25rem;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  background: $lightgray;
+  border-color: $green;
+}
+
+.form-control--invalid label,
+.form-control--invalid p {
+  color: $red;
+}
+
+.form-control--invalid input,
+.form-control--invalid textarea {
+  border-color: $red;
+  background: $lightred;
+}

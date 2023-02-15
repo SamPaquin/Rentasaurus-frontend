@@ -1,0 +1,14 @@
+@import "../../sass/App.scss";
+
+.report-form {
+  position: relative;
+  list-style: none;
+  padding: 1rem;
+  width: 90%;
+  height: 95%;
+  max-width: 40rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 6px;
+  background: white;
+  overflow-y: scroll;
+}
