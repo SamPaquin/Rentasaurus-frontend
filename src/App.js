@@ -75,7 +75,17 @@ const App = () => {
     >
       <Router>
         <MainNavigation />
-        <main><Suspense fallback={<div className="center"><LoadingEgg /></div>}>{routes}</Suspense></main>
+        <main>
+          <Suspense
+            fallback={
+              <div className="center">
+                <LoadingEgg />
+              </div>
+            }
+          >
+            {routes}
+          </Suspense>
+        </main>
       </Router>
     </AuthContext.Provider>
   );

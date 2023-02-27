@@ -26,7 +26,7 @@ const ReportItem = (props) => {
     setShowConfirmModal(false);
     try {
       await sendRequest(
-        `http://localhost:5000/api/reports/${props.id}`,
+        `${process.env.REACT_APP_BACKEND_URL}/reports/${props.id}`,
         "DELETE",
         null,
         {

@@ -86,7 +86,7 @@ const NewReport = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `http://localhost:5000/api/reports`,
+        `${process.env.REACT_APP_BACKEND_URL}/reports`,
         "POST",
         JSON.stringify({
           title: formState.inputs.title.value,

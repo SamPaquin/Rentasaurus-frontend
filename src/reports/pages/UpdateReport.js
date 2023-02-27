@@ -88,7 +88,7 @@ const UpdateReport = () => {
     const fetchReport = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/reports/${reportId}`
+          `${process.env.REACT_APP_BACKEND_URL}/reports/${reportId}`
         );
         setLoadedReport(responseData.report);
         setFormData(
@@ -165,7 +165,7 @@ const UpdateReport = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `http://localhost:5000/api/reports/${reportId}`,
+        `${process.env.REACT_APP_BACKEND_URL}/reports/${reportId}`,
         "PATCH",
         JSON.stringify({
           image: formState.inputs.image.value,

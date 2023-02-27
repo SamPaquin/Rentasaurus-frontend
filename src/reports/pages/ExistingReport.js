@@ -20,7 +20,7 @@ const ExistingReport = () => {
     const fetchReport = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/reports/${reportId}`
+          `${process.env.REACT_APP_BACKEND_URL}/reports/${reportId}`
         );
         setLoadedReport(responseData.report);
         reportData(
